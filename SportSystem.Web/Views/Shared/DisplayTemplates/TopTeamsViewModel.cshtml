@@ -1,0 +1,11 @@
+﻿@model SportSystem.Web.ViewModels.TopTeamsViewModel
+
+<div class="row">
+    <a href="/Teams/Details/@Model.Id">
+        <h2>@Model.Name</h2></a>
+    <p>
+        <a href="@Model.WebSite"><span>@Model.WebSite</span></a>
+    </p>
+    
+    <p>Votes: @Model.Votes</p>
+</div>

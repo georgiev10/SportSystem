@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportSystem.Data", "SportSystem.Data\SportSystem.Data.csproj", "{5EAB453B-F210-4E0E-AD27-AEC96873065D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportSystem.Models", "SportSystem.Models\SportSystem.Models.csproj", "{72D080FD-15E0-4256-948A-F0F472CD6C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportSystem.Web", "SportSystem.Web\SportSystem.Web.csproj", "{88E58B60-4058-4C9D-AD01-EFC8393CE098}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportSystem.Common", "SportSystem.Common\SportSystem.Common.csproj", "{E17FB80C-10C6-4559-8ACE-DDA0ED023060}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EAB453B-F210-4E0E-AD27-AEC96873065D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAB453B-F210-4E0E-AD27-AEC96873065D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAB453B-F210-4E0E-AD27-AEC96873065D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAB453B-F210-4E0E-AD27-AEC96873065D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72D080FD-15E0-4256-948A-F0F472CD6C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72D080FD-15E0-4256-948A-F0F472CD6C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72D080FD-15E0-4256-948A-F0F472CD6C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72D080FD-15E0-4256-948A-F0F472CD6C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88E58B60-4058-4C9D-AD01-EFC8393CE098}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88E58B60-4058-4C9D-AD01-EFC8393CE098}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88E58B60-4058-4C9D-AD01-EFC8393CE098}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88E58B60-4058-4C9D-AD01-EFC8393CE098}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E17FB80C-10C6-4559-8ACE-DDA0ED023060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E17FB80C-10C6-4559-8ACE-DDA0ED023060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E17FB80C-10C6-4559-8ACE-DDA0ED023060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E17FB80C-10C6-4559-8ACE-DDA0ED023060}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,59 @@
+﻿@using Microsoft.AspNet.Identity
+@model SportSystem.Web.ViewModels.TeamDetailsViewModel
+
+@{
+    ViewBag.Title = "Sport System - Team Details";
+}
+
+
+<h2>@Html.DisplayFor(x => x.Name)</h2>
+<p>@Html.DisplayNameFor(x => x.NickName): <strong>@Html.DisplayFor(x => x.NickName)</strong></p>
+<p>@Html.DisplayNameFor(x => x.DateFounded): <strong>@Html.DisplayFor(x => x.DateFounded)</strong></p>
+
+<div class="clearfix">
+    <div class="pull-right">
+        <h2>Votes: <span id="votes">@Model.Votes</span></h2>
+        @if (Model.UserHasVote)
+        {
+            <p>You are voted</p>
+        }
+        else
+        {
+            <div id="vote-button">
+                @using (Ajax.BeginForm("Vote", "Teams", new {teamId = Model.Id, userId = this.User.Identity.GetUserId()}, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "votes",
+                    OnSuccess = "onVoteSuccess"
+                }))
+                {
+                    @Html.AntiForgeryToken()
+                    <input type="submit" name="name" value="+"/>
+                }
+            </div>
+        }
+        <p id="hasVoted" hidden="hidden">You are voted</p>
+    </div>
+</div>
+
+<h2>Players:</h2>
+<div class="row">
+    @Html.DisplayFor(x => x.Players)
+</div>
+
+
+
+
+@section scripts {
+    @Scripts.Render("~/bundles/ajax")
+
+    <script>
+        function onVoteSuccess() {
+            var button = document.getElementById("vote-button");
+            button.parentNode.removeChild(button);
+
+            $("#hasVoted").show();
+        }
+    </script>
+}

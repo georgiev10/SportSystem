@@ -1,0 +1,15 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<SportSystem.Web.ViewModels.TopMachesViewModel>
+
+@{
+    ViewBag.Title = "Sport System - All Matches";
+}
+
+<div class="row">
+    @Html.DisplayFor(x => x)
+</div>
+<div class="clearfix"></div>
+<div>
+    @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+</div>
